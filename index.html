@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>События клавиатуры</title>
+    <style>
+        .circle {
+            position: fixed;
+            top: calc(50vh - 50px);
+            left: calc(50vw - 50px);
+            width: 100px;
+            height: 100px;
+            background: url('https://gitlab.com/uploads/-/system/project/avatar/33045377/2507930-middle.png');
+            background-size: cover;
+            background-position: center center;
+            border-radius: 50%;
+            display: none;
+        }
+        .circle.active {
+            display:  block;
+        }
+        .div{
+            text-align: center;
+            margin-top: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 28px;
+        }
+        .div::after{
+            content: 'и Esc чтобы убрать';
+            position: relative;
+            top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">НАЖМИ 'Enter' чтобы показать</div>
+    <div class="circle"></div>
+    <script src="script.js"></script>
+</body>
+</html>
